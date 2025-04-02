@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WrapCapPDF"
+version = "0.1.0"
+description = "A PDF Capture Library"
+authors = [{ name = "David", email = "dave@chatrecall.com" }]
+dependencies = [
+    "PyMuPDF==1.25.1",
+    "pymupdf4llm==0.0.17",
+    "markdownify==0.14.1",
+    "requests-html==0.10.0",
+    "Markdown==3.7",
+]
+
+[tool.setuptools]
+packages = ["WrapCapPDF"]
+package-dir = {"" = "src"}
+include-package-data = true
